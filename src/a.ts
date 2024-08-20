@@ -56,3 +56,51 @@ isValid({
     lastName: "Syed",
     age: 19
 })
+
+
+// --->
+// used to aggregate data types
+type User2 = {
+    firstName: string;
+    lastName: string;
+    age: number;
+};
+type GreetArg = number | string;
+function greets(id: GreetArg) {
+    // code here
+}
+greets(1);
+greets("1");
+
+
+// --->
+// Intersection of Types
+type Employee = {
+    name: string;
+    startDate: Date;
+};
+ interface Manager {
+    name: string;
+    department: string;
+ };
+
+ type TechLead = Employee & Manager;
+ const t: TechLead = {
+    name: "Zaid",
+    startDate: new Date(),
+    department: "HR"
+ }
+
+
+ // --->
+ // Arrays in TS
+ function maxValue(arr: number[]) {
+    let max = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i]
+        }
+    }
+    return max;
+}
+maxValue([1,2,3,4])
