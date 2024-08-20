@@ -57,6 +57,24 @@ isValid({
     age: 19
 })
 
+// example 2
+// interface TodoProp {
+//     title: string,
+//     description: string,
+//     done: boolean
+//   }
+//   function Todo(props: TodoProp) {
+//     return <div>
+//       <h1>
+//         {props.title}
+//       </h1>
+//       <h2>
+//         {props.description}
+//       </h2>
+//     </div>
+//   }
+  
+
 
 // --->
 // used to aggregate data types
@@ -92,15 +110,3 @@ type Employee = {
  }
 
 
- // --->
- // Arrays in TS
- function maxValue(arr: number[]) {
-    let max = 0;
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] > max) {
-            max = arr[i]
-        }
-    }
-    return max;
-}
-maxValue([1,2,3,4])
