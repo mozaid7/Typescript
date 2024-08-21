@@ -1,5 +1,6 @@
 import { getClient } from "./utils";
 
+// updating the state of the todo to "Done".
 async function updateTodo(todoId: number) {
     const client = await getClient();
     
