@@ -1,5 +1,6 @@
 import { getClient } from "../utils";
 
+// LEFT JOIN
 // Get all todos for a give user
 // This needs to ensure that every user comes atleast once
 async function getUserAndTodosWithJoin(userId: number) {
