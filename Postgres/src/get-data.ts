@@ -1,5 +1,6 @@
 import { getClient } from "./utils";
 
+// fetching the values from the database we created.
 async function getUsers() {
     const client = await getClient();
     
