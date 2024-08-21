@@ -1,5 +1,6 @@
 import { getClient } from "../utils";
 
+// JOIN or INNER JOIN (data should be present in both the tables.)
 // Get all todos for a give user
 // This shouldnt return a row if no todos exist for the user
 async function getUserAndTodosWithJoin(userId: number) {
