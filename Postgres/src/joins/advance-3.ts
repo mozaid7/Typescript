@@ -1,5 +1,6 @@
 import { getClient } from "../utils";
 
+// JOIN i.e. getting all the details from both the tables.
 async function getAllTodosWithUserDetails() {
     const client = await getClient();
 
