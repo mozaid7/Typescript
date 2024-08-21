@@ -1,5 +1,6 @@
 import { getClient } from "./utils";
 
+// data inserted in tables
 async function createEntries() {
     const client = await getClient();
     const insertUserText = 'INSERT INTO users (email, password) VALUES ($1, $2) RETURNING id';
