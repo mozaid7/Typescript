@@ -1,5 +1,6 @@
 import { getClient } from "./utils";
 
+// deleting a data from the DB.
 async function deleteTodo(todoId: number) {
     const client = await getClient();
     
