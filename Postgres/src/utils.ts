@@ -1,5 +1,5 @@
-import { Client } from 'pg';
 import dotenv from 'dotenv';
+import { Client } from 'pg';
 dotenv.config();
 const key = process.env.password;
 
