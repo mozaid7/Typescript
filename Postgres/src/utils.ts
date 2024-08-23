@@ -1,5 +1,6 @@
 import { Client } from 'pg';
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 const password = process.env.password;
 
 // client allows us to connect to our Postgres instance for storing data.
