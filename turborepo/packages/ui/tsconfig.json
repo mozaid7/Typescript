@@ -3,6 +3,6 @@
   "compilerOptions": {
     "outDir": "dist"
   },
-  "include": ["src"],
+  "include": ["button.tsx", "code.tsx", "card.tsx"],
   "exclude": ["node_modules", "dist"]
 }
