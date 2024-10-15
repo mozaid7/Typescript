@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { PrismaClient } from "@prisma/client"
-import { useRouter } from "next/navigation";
-const client = new PrismaClient();
+import client from "@/db";
 
 export async function POST(req: NextRequest) {
     // extract the body
