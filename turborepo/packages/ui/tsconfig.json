@@ -1,8 +1,0 @@
-{
-  "extends": "@repo/typescript-config/react-library.json",
-  "compilerOptions": {
-    "outDir": "dist"
-  },
-  "include": ["button.tsx", "code.tsx", "card.tsx"],
-  "exclude": ["node_modules", "dist"]
-}
