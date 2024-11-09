@@ -10,14 +10,14 @@ const handler = NextAuth({
                 password: {label: 'Password', type:'password', placeholder:'12345'}
             },
             async authorize(credentials : any) {
-                const username = credentials.username;
-                const password = credentials.password;
+                // const username = credentials.username;
+                // const password = credentials.password;
                 console.log(credentials);
                 // validation
                 return {
                     id: "user1", // user.id
                     name: "Zaid", // user.name
-                    username: "zaid@example.com" // user.username
+                    email: "zaid@example.com" // user.username
                 };
             },
         })
