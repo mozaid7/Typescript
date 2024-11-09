@@ -15,14 +15,30 @@ const handler = NextAuth({
                 console.log(credentials);
                 // validation
                 return {
-                    id: "user1", // user.id
+                    id: "1", // user.id
                     name: "Zaid", // user.name
                     email: "zaid@example.com" // user.username
                 };
             },
         })
     ],
-    secret:process.env.NEXTAUTH_SECRET
+    secret:process.env.NEXTAUTH_SECRET,
+    callbacks : {
+        // jwt: ({token,user}) => {
+        //   token.userId = token.sub;
+        //   console.log(token);
+        //    return token
+        // },
+        // session callback is more efficient than jwt callback
+        
+        session: ({session, token, user}: any) => {
+            console.log(session);
+            if (session && session.user) {
+                session.user.id = token.sub;
+            }
+            return session;
+        }
+    }
 });
 
 export const GET = handler;
