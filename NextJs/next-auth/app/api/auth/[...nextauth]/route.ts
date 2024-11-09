@@ -12,19 +12,17 @@ const handler = NextAuth({
             async authorize(credentials : any) {
                 const username = credentials.username;
                 const password = credentials.password;
-                let user; // check for DB validation whether data is present or not
-
-                if(!user) {
-                    return null;
-                }
-
+                console.log(credentials);
+                // validation
                 return {
-                    id: user, // user.id
-                    username: user // user.username
+                    id: "user1", // user.id
+                    name: "Zaid", // user.name
+                    username: "zaid@example.com" // user.username
                 };
             },
         })
     ],
+    secret:process.env.NEXTAUTH_SECRET
 });
 
 export const GET = handler;
