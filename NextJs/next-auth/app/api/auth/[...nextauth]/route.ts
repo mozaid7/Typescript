@@ -7,7 +7,7 @@ const handler = NextAuth({
             name: "Email",
             credentials: {
                 username: {label: 'Username', type:'text', placeholder:'example@.com'},
-                password: {label: 'Password', type:'text', placeholder:'12345'}
+                password: {label: 'Password', type:'password', placeholder:'12345'}
             },
             async authorize(credentials : any) {
                 const username = credentials.username;
