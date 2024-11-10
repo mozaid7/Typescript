@@ -50,6 +50,6 @@ export const NEXT_AUTH = {
         }
     },
     pages: {
-        signin: "/signin"
+        signIn: "/signin"
     }
 }
