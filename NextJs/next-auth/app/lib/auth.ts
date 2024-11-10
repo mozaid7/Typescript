@@ -48,5 +48,8 @@ export const NEXT_AUTH = {
             }
             return session;
         }
+    },
+    pages: {
+        signin: "/signin"
     }
 }
